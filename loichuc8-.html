@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lời Chúc 8/3</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffe6e6;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+        }
+        h1 {
+            color: #ff6699;
+            animation: textGlow 1.5s infinite alternate;
+        }
+        p {
+            color: #333;
+        }
+        .flower {
+            font-size: 50px;
+            animation: bounce 1.5s infinite alternate;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+        @keyframes textGlow {
+            from { text-shadow: 0 0 10px #ff6699; }
+            to { text-shadow: 0 0 20px #ff3366; }
+        }
+        .hearts {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+        .heart {
+            color: red;
+            font-size: 20px;
+            animation: floatUp 3s infinite ease-in-out;
+            position: absolute;
+            opacity: 0;
+        }
+        @keyframes floatUp {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(-150px); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="hearts">
+            <span class="heart" style="left: -30px; animation-delay: 0s;">❤️</span>
+            <span class="heart" style="left: 0px; animation-delay: 0.5s;">💖</span>
+            <span class="heart" style="left: 30px; animation-delay: 1s;">💘</span>
+        </div>
+        <div class="flower">🌸</div>
+        <h1>Chúc mừng ngày 8/3!</h1>
+        <p>Chúc tất cả những người phụ nữ luôn xinh đẹp, hạnh phúc và thành công! 💖</p>
+    </div>
+</body>
+</html>
